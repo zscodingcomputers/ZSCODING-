@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEt</title>
+</head>
+
+<style>
+  body{
+    background: url(6.jpg)center center fixed;
+    background-size: cover;
+  }  
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .slide {
+        position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    li{
+        display: inline;
+        list-style-type: none;
+        padding: 70px;
+        
+    }
+
+</style>
+<header>
+    <ul>
+        <li><a style="font-family: 'Futura MD BT';" href="index.html">HOME</a></li>
+        <li><a style="font-family: 'Futura MD BT';" href="about us .html">ABOUT US</a></li>
+        <li><a style="font-family: 'Futura MD BT';" href="contact.html">CONTACT</a></li>
+        <li><a style="font-family: 'Futura MD BT';" href="address.html">ADDRESS</a></li>
+        <li><a style="font-family: 'Futura MD BT';" href="news.html">NEWS</a></li>
+        <li><a style="font-family: 'Futura MD BT';" href="FAQs.html">FAQs</a></li>
+        
+        <center>
+            <div><img src="./code.png" alt="code" width="150" height="110"></div>
+        </center>
+
+
+    </ul>
+</header>
+<body>
+        <div class="slideshow-container">
+            <div class="slide">
+              <img src="16.jpg" alt="16">
+            </div>
+            <div class="slide">
+              <img src="a.png" alt="a">
+            </div>
+            <div class="slide">
+                <img src="b.png" alt="b">
+            </div>
+            <div class="slide">
+                <img src="c.png" alt="c">
+              </div>
+              <div class="slide">
+                <img src="14.jpg" alt="14">
+              </div>
+              <div class="slide">
+                  <img src="f.png" alt="f">
+              </div>
+              <div class="slide">
+                <img src="2.jpg" alt="2">
+            </div>
+            <div class="slide">
+              <img src="7.jpg" alt="7">
+          </div>
+          <div class="slide">
+            <img src="12.jpg" alt="12">
+        </div>
+        <div class="slide">
+          <img src="3.png" alt="3">
+      </div>
+      <div class="slide">
+        <img src="13.jpg" alt="13">
+    </div>
+    <div class="slide">
+      <img src="14.jpg" alt="14">
+  </div>
+  <div class="slide">
+    <img src="back.jpg" alt="back">
+</div>
+  
+
+
+            </div>
+            <!-- Add more slide divs as needed -->
+          </div>
+        <center>
+            <H1 style="color: rgb(214, 12, 12) ; font-family: 'Futura MD BT'; font-weight: 10; font-size: 60px" >ZS CODING COMPUTERS</H1>
+            <H2>Computer Traning Center</H2>
+            <H3>Enroll for for any of our program,you will be happy you did...</H3>
+        </center>
+    
+        <center>
+            <img src="./14.jpg" alt="maytex 14" height="300" width="600">
+            <img src="./16.jpg" alt="16" width="250px" height="300px">
+        </center>
+        <h2>LET US HELP YOU BECOME A CERTIFIED TECH SAVVY</h2>
+    
+        <center>
+            <h3>In this course, you will learn how to use computer both basic and advance, 
+                create a website,develop Apps Build Robotics and coding  configure your own App 
+                along with creating dataset reports for use in decision-making analysis
+                In addition, your instructor will guide you on how to create dashboards, 
+                interpret data and create trackers for monitoring changes in your dataset.
+                .</h3>
+                <h2>FLEXIBLE CLASSES</h2>
+    <h3>Whether it’s an online or physical class,
+        we can design a training that suits your needs.
+       </h3>
+       <h2>FRIENDLY SUPPORT STAFF</h2>
+       <h3>We have got the best set of instructors
+        available at your beck and call to guide 
+       you on your path to becoming an expert.
+        Support to participants after the training is also provided
+       </h3>
+       <h2>HANDS-ON LEARNING</h2>
+       <h3>We will patiently guide you on how to 
+        solve real-world problems with the aid of use cases.
+        </h3>
+        <h2>WHAT YOU WILL LEARN</h2>
+        <h3>The topics below are not an exhaustive list and
+            are not limited to only what is stated below.
+           </h3>
+           <h3>COMPUTER BASIC</h3>
+           <h3>DIGITAL STORY MAKING</h3>
+           <h3>CODING</h3>
+           <h3>WEB DEVELOPMENT</h3>APP DEVELOPMENT<h3>GRAPGHIC DESIGN</h3><h3>AUTOCAD</h3>
+                <img src="./16.jpg" alt=16" width="1300"height="800">
+            <img src="./4.jpg" alt="4" width="1300" height="800">
+        </center>
+    
+            <img src="./6.jpg" alt="6" width="1300"height="800">
+            <video autoplay muted loop src="./VID_20220429_150001.mp4"
+           controls title="VID_20220429_150001"height="300"width="500"</video>
+           
+        </center>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+              let slides = document.getElementsByClassName("slide");
+              for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              slides[slideIndex - 1].classList.add("active");
+              setTimeout(showSlides, 2000); // Adjust slide duration as needed (in milliseconds)
+            }
+          </script>
+    
+          
+    
+    
+</body>
+</html>
